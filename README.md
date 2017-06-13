@@ -1,20 +1,21 @@
 # Wizards
 Linuxcnc Wizards for common operation
-This is my approch for things i didn't find in Linuxcnc.
+This is my approch for things i didn't find in Linuxcnc, and i found other options are too hard to install ( modifing the ini, changing and adding Paths) .
 Btw I'm not a real programmer, so my code will look buggy .  
 # Installation
 copy both files : 
-  1. Wizards.py
+  1. Wizards.py or Wizards2.8.py
   2. Wizards.glade
   
-To a directory of your choice 
+To a directory of your choice (Better in your ngc folder for quick access) 
     
     chmod +x Wizards.py 
 To make it executable or run from any editor with run cabablity.
-make sure Linuxcnc is running and your machine is homed and ready for normmal operation.
-start Wizards.py :
+Make sure Linuxcnc is running and your machine is homed and ready for normmal operation.
+start Wizards :
     
-    in Terminal : ./Wizards.py
+    in Terminal : ./Wizards.py or ./Wizards2.8.py
+    or in Linuxcnc open the file (Wizard.py or Wizard2.8.py ) Yes Linuxcnc by default can open python files.
     or Double click from file manager.
     or from (for example open Geany and press F5 to run program ).
     
