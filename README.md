@@ -9,10 +9,10 @@ copy both files :
   
 To a directory of your choice (Better in your ngc folder for quick access) 
     
-    chmod +x Wizards.py 
+    chmod +x Wizards.py(Wizards2.8.py) 
 To make it executable or run from any editor with run cabablity.
 Make sure Linuxcnc is running and your machine is homed and ready for normmal operation.
-start Wizards :
+# Running Wizards :
     
     in Terminal : ./Wizards.py or ./Wizards2.8.py
     or in Linuxcnc open the file (Wizard.py or Wizard2.8.py ) Yes Linuxcnc by default can open python files.
