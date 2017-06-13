@@ -125,19 +125,19 @@ class WizardsApp (gtk.Window):
 	def on_GoCenter_clicked (self,*args):
 		c.mode(linuxcnc.MODE_MDI)
 		c.wait_complete()
-		c.mdi("F%s G1 %s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("[")[1].split("]")[0]))
+		c.mdi("F%sG53G1 %s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("[")[1].split("]")[0]))
 	def on_hscale1_change_value (self,*args):
 		
 		""" Function doc """
 	def on_GoCenterX_clicked (self,*args):
 		c.mode(linuxcnc.MODE_MDI)
 		c.wait_complete()
-		c.mdi("F%sG1%s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("[")[1].split(" Y")[0]))
+		c.mdi("F%sG53G1%s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("[")[1].split(" Y")[0]))
 		
 	def on_GoCenterY_clicked (self,*args):
 		c.mode(linuxcnc.MODE_MDI)
 		c.wait_complete()
-		c.mdi("F%sG1Y%s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("Y")[1].split("]")[0]))
+		c.mdi("F%sG53G1Y%s"%("{:3.0f}".format(Feedrate_scale.get_value()),Centerresult.get_text().split("Y")[1].split("]")[0]))
 		
 			
 			
