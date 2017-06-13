@@ -2,8 +2,7 @@
 
 import sys
 import linuxcnc
-import time
-import gtk,gtk.gdk
+import gtk
 import numpy as np
 
 
