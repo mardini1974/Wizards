@@ -156,3 +156,9 @@ except linuxcnc.error, detail:
 	print "error", detail
 	sys.exit(1)
 
+def savedata():
+    with open("Wizards.ini", "w") as outfile:
+        outfile.write("%s" % WizardsApp.centerresult.get_text())
+
+import atexit
+atexit.register(savedata)
