@@ -74,6 +74,8 @@ class WizardsApp(gtk.Window):
             ValPosY.set_text(config.get('ManualCenter', 'ValPosY'))
             ValNegX.set_text(config.get('ManualCenter', 'ValNegX'))
             ValNegY.set_text(config.get('ManualCenter', 'ValNegY'))
+            C3PCenter.set_text (config.get('Center3P', 'Center'))
+            C3PRadius.set_text (config.get('Center3P', 'Radius'))
         except IOError:
             Centerresult.set_text('')
             ValPosX.set_text('')
@@ -234,6 +236,9 @@ def savedata():
     config.set('ManualCenter', 'ValPosY', ValPosY.get_text())
     config.set('ManualCenter', 'ValNegX', ValNegX.get_text())
     config.set('ManualCenter', 'ValNegY', ValNegY.get_text())
+    config.add_section('Center3P')
+    config.set('Center3P', 'Center', C3PCenter.get_text())
+    config.set('Center3P', 'Radius', C3PRadius.get_text())
     with open("Wizards.ini", "w") as outfile:
         config.write(outfile)
 
