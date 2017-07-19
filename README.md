@@ -44,4 +44,5 @@ To quit click stop or press Esc on you keyboard.
 # Center 3 points
  To find center of circle using 3 point make a touch on three different points, preferably as far as possible to get accurate results.
  this can work on arcs , be careful very near points can give wrong center.
+
 The program will be in front of other screens till you finish the operation.
