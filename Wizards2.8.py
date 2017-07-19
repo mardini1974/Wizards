@@ -187,7 +187,8 @@ class WizardsApp(gtk.Window):
     def on_Manual_clicked(self, *args):
         c.mode(linuxcnc.MODE_MANUAL)
         c.wait_complete()
-    
+    def myfunc(self):
+        #print
     def on_center_clicked(sef, *args):
         ValueposX = 0.0 if ValPosX.get_text() == '' else float(ValPosX.get_text())
         ValueposY = 0.0 if ValPosY.get_text() == '' else float(ValPosY.get_text())
